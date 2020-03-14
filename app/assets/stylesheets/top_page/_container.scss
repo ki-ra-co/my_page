@@ -21,9 +21,11 @@
   .push-btn:hover {
     height: 120px;
     width: 330px;
-    background-color: rgb(191, 192, 189);
-    color: rgb(216, 89, 89);
+    background-image: url(boards.jpg;);
+    color: rgb(209, 77, 77);
     font-size: 70px;
+    text-shadow: 3px 3px 1px indigo;
+    letter-spacing: 5px;
     line-height: 110px;
     opacity: 0.9;
   }
