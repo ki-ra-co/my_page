@@ -1,4 +1,9 @@
-#before-container.home-wrapper__container
+.home-wrapper__container
   .push-btn push
-#after-container
-  
+
+:javascript
+  $(function() {
+    $(".push-btn").on("click",function(){
+      console.log("click");
+    })
+  });
