@@ -6,14 +6,12 @@
   background-size: 100%;
   display: none;
   .home-wrapper__link-box {
-    // display: flex;
     height: 100%;
     width: calc(100vw - 400px);
     background-image: url(boards.jpg);
     background-size: 100%;
     margin: 0 auto;
     opacity: 0.95;
-
     ul.link-box__left {
       height: 100%;
       width: 50%;
@@ -56,7 +54,6 @@
       }
       .facebook-font {
         text-decoration: none;
-        // position: absolute;
         top: 7px;
         left: 10px;
         opacity: 0;
@@ -265,3 +262,4 @@
     }
   }
 }
+
