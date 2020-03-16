@@ -6,39 +6,6 @@
   background-size: 100%;
   display: none;
   position: absolute;
-  #circle {
-    width: 300px;
-    height: 300px;
-    border: 1px solid #333;
-    border-radius: 50%;
-    position: relative;
-    display: none;
-  }
-  i {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    left: 50%;
-    top: 25%;
-    color: cornsilk;
-    transform-origin: center 500%;
-    animation: rotate1 5s linear infinite;
-  }
-  @keyframes rotate1 {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-
-
-
-
-
-
   #typing {
     height: 30px;
     width: 100%;
@@ -63,7 +30,7 @@
     margin: 0 auto;
     opacity: 0.1;
   }
-  .home-wrapper__link-box {
+  .home-wrapper__link-box:hover {
     display: flex;
     height: 91.4%;
     width: calc(100vw - 100px);
@@ -73,6 +40,32 @@
     border-top-right-radius: 1000px;
     opacity: 0.95;
     transition: 1.2s;
+    #circle {
+      width: 300px;
+      height: 300px;
+      border: 1px solid #333;
+      border-radius: 50%;
+      position: relative;
+      display: none;
+    }
+    .fab.fa-gitkraken {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      left: 50%;
+      top: 25%;
+      color: cyan;
+      transform-origin: center 500%;
+      animation: rotate1 5s linear infinite;
+    }
+    @keyframes rotate1 {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
     .link-box__left {
       height: 100%;
       width: 50%;
