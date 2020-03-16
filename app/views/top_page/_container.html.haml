@@ -3,7 +3,6 @@
 .before__home-wrapper__container
   %h1.first_typing#typing
   %h1.second_typing#typing
-  %h1.description
   .home-wrapper__link-box
     #circle
     %i.fab.fa-gitkraken.fa-3x
@@ -17,7 +16,7 @@
         = link_to("Portfolio","https://ja-jp.facebook.com/", {class: "portfolio-font"})
       %li.link-box__qiita
         = link_to("Qiita","https://twitter.com/login?lang=ja", {class: "qiita-font"})
-
+  %h1.description
 :javascript
   $(function() {
     $('.push-btn').on('click',function(){
