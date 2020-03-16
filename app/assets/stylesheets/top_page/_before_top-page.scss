@@ -67,6 +67,11 @@
       color: cyan;
       transform-origin: center 500%;
       animation: rotate1 5s linear infinite;
+      .can-click {
+        color: #fff;
+        width: 100px;
+        font-size: 15px;
+      }
     }
     @keyframes rotate1 {
       0% {

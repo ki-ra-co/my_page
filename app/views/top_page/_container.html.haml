@@ -6,6 +6,7 @@
   .home-wrapper__link-box
     #circle
     %i.fab.fa-gitkraken.fa-3x
+      %h1.can-click Can you click?
     %ul.link-box__left
       %li.link-box__profile
         = link_to("Profile","https://ja-jp.facebook.com/", {class: "profile-font"})
@@ -68,6 +69,9 @@
         $(this).parents('.before__home-wrapper__container').find('.description').css('display', 'none');
     });
     $('.fab.fa-gitkraken').on('click',function(){
-      $('.fab.fa-gitkraken').css('display','none');
-    })
+      $('.can-click').text("GYAAAA!!!").css('color','red');
+      setTimeout(function(){
+        $('.fab.fa-gitkraken').css('display','none');
+      },1000);
+    });
   });
