@@ -43,8 +43,28 @@
     $('.link-box__profile').hover(function(){
       $(this).parents('.before__home-wrapper__container').find('.description').css({
         'display':'block',
-        'text':'aaaa'
       }).text("私の経歴を見ますか？");
+    }, function() {
+        $(this).parents('.before__home-wrapper__container').find('.description').css('display', 'none');
+    });
+    $('.link-box__skill').hover(function(){
+      $(this).parents('.before__home-wrapper__container').find('.description').css({
+        'display':'block',
+      }).text("私のスキルセットです");
+    }, function() {
+        $(this).parents('.before__home-wrapper__container').find('.description').css('display', 'none');
+    });
+    $('.link-box__portfolio').hover(function(){
+      $(this).parents('.before__home-wrapper__container').find('.description').css({
+        'display':'block',
+      }).text("私が作ったアプリを見ますか？");
+    }, function() {
+        $(this).parents('.before__home-wrapper__container').find('.description').css('display', 'none');
+    });
+    $('.link-box__qiita').hover(function(){
+      $(this).parents('.before__home-wrapper__container').find('.description').css({
+        'display':'block',
+      }).text("私が書いたqiitaです");
     }, function() {
         $(this).parents('.before__home-wrapper__container').find('.description').css('display', 'none');
     });
