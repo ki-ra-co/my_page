@@ -41,7 +41,7 @@
   }
   .home-wrapper__link-box:hover {
     display: flex;
-    height: 98.5%;
+    height: 100%;
     width: calc(100vw - 100px);
     background-image: image-url('boards-hover.jpg');
     background-size: 100%;
@@ -50,7 +50,7 @@
     opacity: 0.95;
     transition: 1.2s;
     position: relative;
-    bottom: 50px;
+    bottom: 60px;
     #circle {
       width: 300px;
       height: 300px;
