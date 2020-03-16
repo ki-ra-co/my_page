@@ -19,8 +19,16 @@
     top: 150px;
     z-index: 1;
   }
-  #typing::after {
-    color: red;
+  .description {
+    height: 20px;
+    width: 250px;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
+    z-index: 1;
+    display: none;
   }
   .home-wrapper__link-box {
     height: 96%;
@@ -101,12 +109,13 @@
         width: 300px;
         background-color:yellow;
         color: aqua;
-        font-size: 80px;
+        font-size: 60px;
         font-weight: bold;
         transform: rotateX(10deg);
         transition: 1s;
         text-align: center;
-        line-height: 80px;
+        line-height: 70px;
+        letter-spacing: 10px;
         margin-bottom: 100px;
         border-radius: 240px 15px 100px 15px / 15px 200px 15px 185px;
         padding: 4%;

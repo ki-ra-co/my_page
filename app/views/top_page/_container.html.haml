@@ -3,6 +3,7 @@
 .before__home-wrapper__container
   %h1.first_typing#typing
   %h1.second_typing#typing
+  %h1.description
   .home-wrapper__link-box
     #circle
     %i.fab.fa-gitkraken.fa-3x
@@ -38,6 +39,14 @@
       }
       first_typing('.first_typing', 'Hello! I am Koutaku Kihara');
       second_typing('.second_typing', 'Thanks for coming');
+    });
+    $('.link-box__profile').hover(function(){
+      $(this).parents('.before__home-wrapper__container').find('.description').css({
+        'display':'block',
+        'text':'aaaa'
+      }).text("私の経歴を見ますか？");
+    }, function() {
+        $(this).parents('.before__home-wrapper__container').find('.description').css('display', 'none');
     });
     $('.fab.fa-gitkraken').on('click',function(){
       $('.fab.fa-gitkraken').css('display','none');
