@@ -1,6 +1,6 @@
 .home-wrapper__container {
   height: 85%;
-  background-image: url(code.jpeg;);
+  background-image: image-url('code.jpeg');
   background-repeat: no-repeat;
   background-size: 100%;
   padding-top: 280px;
@@ -23,7 +23,7 @@
   .push-btn:hover {
     height: 120px;
     width: 330px;
-    background-image: url(boards.jpg;);
+    background-image: image-url('boards.jpg');
     color: rgb(209, 77, 77);
     border: 1px solid khaki;
     text-shadow: 3px 3px 1px indigo;
@@ -36,7 +36,7 @@
 @media (max-width:1000px ) {
   .home-wrapper__container {
     height: 85%;
-    background-image: url(boards-side.jpg;);
+    background-image: image-url('boards-side.jpg');
     background-repeat: repeat-y;
     background-size: 100%;
     padding-top: 250px;
@@ -67,7 +67,7 @@
 @media (max-width:670px ) {
   .home-wrapper__container {
     height: 85%;
-    background-image: url(boards-side.jpg;);
+    background-image: image-url('boards-side.jpg');
     background-repeat: repeat-y;
     background-size: 100%;
     padding-top: 250px;

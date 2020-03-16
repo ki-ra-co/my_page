@@ -90,17 +90,13 @@
       width: calc(100vw - 400px);
       background-image: url(boards-hover.jpg);
       background-size: 100%;
-      border-top-left-radius: 1000px;
-      border-top-right-radius: 1000px;
-      border-bottom-right-radius: 50px;
-      border-bottom-left-radius: 50px;
+      border-top-left-radius: 500px;
+      border-top-right-radius: 500px;
       transition: 1.2s;
       ul.link-box__left {
         height: 100%;
         width: 50%;
         list-style: none;
-        padding-top: 275px;
-        padding-left: 140px;
         margin: 0px;
         li.link-box__left_login {
           height: 100px;
@@ -189,12 +185,10 @@
         height: 100%;
         width: 50%;
         list-style: none;
-        padding-top: 275px;
-        padding-left: 50px;
         opacity: 1;
         li.link-box__right_facebook {
-          height: 100px;
-          width: 300px;
+          height: 30px;
+          width: 80px;
           background-color: rgb(116, 126, 27);
           font-size: 50px;
           font-weight: bold;
@@ -210,8 +204,8 @@
           }
         }
         li.link-box__right_facebook:hover {
-          height: 100px;
-          width: 300px;
+          height: 30px;
+          width: 80px;
           background-color: rgb(16, 35, 199);
           color: burlywood;
           font-size: 60px;

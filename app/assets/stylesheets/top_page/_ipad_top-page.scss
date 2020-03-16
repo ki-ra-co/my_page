@@ -4,13 +4,14 @@
     width: 100%;
     background-image: url(code.jpeg;);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;;
     display: none;
     .home-wrapper__link-box {
       height: 100%;
-      width: calc(100vw - 400px);
+      width: 100%;
       background-image: url(boards.jpg);
-      background-size: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
       margin: 0 auto;
       opacity: 0.95;
       ul.link-box__left {
@@ -25,7 +26,6 @@
           font-weight: bold;
           text-align: center;
           line-height: 100px;
-          border-radius: 240px 15px 100px 15px / 15px 200px 15px 185px;
           padding: 1%;
           opacity: 0;
         }
@@ -87,19 +87,17 @@
     .home-wrapper__link-box:hover {
       display: flex;
       height: 100%;
-      width: calc(100vw - 400px);
+      width: 100%;
       background-image: url(boards-hover.jpg);
-      background-size: 100%;
-      border-top-left-radius: 1000px;
-      border-top-right-radius: 1000px;
-      border-bottom-right-radius: 50px;
-      border-bottom-left-radius: 50px;
+      background-size: cover;
+      border-top-left-radius: 500px;
+      border-top-right-radius: 500px;
       transition: 1.2s;
       ul.link-box__left {
         height: 100%;
         width: 50%;
         list-style: none;
-        padding-top: 275px;
+        padding-top: 230px;
         padding-left: 140px;
         margin: 0px;
         li.link-box__left_login {
@@ -189,7 +187,7 @@
         height: 100%;
         width: 50%;
         list-style: none;
-        padding-top: 275px;
+        padding-top: 230px;
         padding-left: 50px;
         opacity: 1;
         li.link-box__right_facebook {

@@ -4,6 +4,8 @@
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title MyPage
     %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"}
+    %link{:href => "https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700|Electrolize|Lobster|Patrick+Hand|Shadows+Into+Light&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese", :rel => "stylesheet"}/
+
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'

@@ -1,24 +1,42 @@
 .home-wrapper__container
   .push-btn push
 .before__home-wrapper__container
+  %h1.first_typing#typing
+  %h1.second_typing#typing
   .home-wrapper__link-box
+    #circle
+    .content1
     %ul.link-box__left
-      %li.link-box__left_login
-        %h1 Profile
-      %li.link-box__left__create
-        %h1 Skill
+      %li.link-box__profile
+        = link_to("Profile","https://ja-jp.facebook.com/", {class: "profile-font"})
+      %li.link-box__skill
+        = link_to("Skill","https://ja-jp.facebook.com/", {class: "skill-font"})
     %ul.link-box__right
-      %li.link-box__right_facebook
-        %h1　Portfolio
-        = link_to("facebook","https://ja-jp.facebook.com/", {class: "facebook-font"})
-      %li.link-box__right_twitter
-        %h1 Qiita
-        = link_to("twitter","https://twitter.com/login?lang=ja", {class: "twitter-font"})
+      %li.link-box__portfolio
+        = link_to("Portfolio","https://ja-jp.facebook.com/", {class: "portfolio-font"})
+      %li.link-box__qiita
+        = link_to("Qiita","https://twitter.com/login?lang=ja", {class: "qiita-font"})
 
 :javascript
   $(function() {
     $('.push-btn').on('click',function(){
       $('.home-wrapper__container').css('display','none');
       $('.before__home-wrapper__container').css('display','block');
+      const first_typing = (element, sentence) => {
+        [...sentence].forEach((character, index) => {
+          setTimeout(() => {
+            document.querySelector(element).textContent += character;
+         }, 200 * +index);
+        });
+      }
+      const second_typing = (element, sentence) => {
+        [...sentence].forEach((character, index) => {
+          setTimeout(() => {
+            document.querySelector(element).textContent += character;
+         }, 300 * +index);
+        });
+      }
+      first_typing('.first_typing', 'Hello! I am Koutaku Kihara');
+      second_typing('.second_typing', 'Thanks for coming');
     })
   });
