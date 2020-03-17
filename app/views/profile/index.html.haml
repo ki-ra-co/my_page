@@ -10,9 +10,9 @@
       %h2.profile_former-job.skeleton　前職　警察官
       %h2.profile_age.skeleton　28歳
     %li.profile-btn さらに詳しく
-    %li.return-home 戻る
     %li.southernmost　←日本本土最南端 ！
   %h1.image-description 画像は故郷の鹿児島県にある佐多岬の写真です！
+  .return-home-btn 戻る
   .job__box
     %p.job__description
     2010年３月　鹿児島県立鹿屋工業高等学校 電気科 卒業
@@ -107,13 +107,14 @@
         'right': '-600px',
         'opacity': '0'
       }).animate({
-        'bottom': '620px',
+        'bottom': '680px',
         'right': '30px',
         'opacity': '0.7'
       },500);
 
       $('.toBe-engineer-btn').on('click', function(){
         $('.job__box').remove();
+        $('.toBe-engineer-btn').remove();
         $('.dream_description').css({
         'display': 'block',
         'position': 'relative',
