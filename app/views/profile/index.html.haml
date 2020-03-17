@@ -1,16 +1,61 @@
 -# = render 'top_page/header'
-%ul.profile__container
-  %li.my-image
-  %li.mypage__title
-    %h1.profile_title My profile
-    %h2.profile_name.skeleton　木原　康拓（きはら こうたく）
-    %h2.profile_address.skeleton　神奈川県横浜市在住
-    %h2.profile_birthplace.skeleton　出身地　鹿児島県
-    %h2.profile_former-job.skeleton　前職　警察官
-    %h2.profile_age.skeleton　28歳
-  %li.profile-btn さらに詳しく
-  %li.southernmost　←日本本土最南端 ！
-%h1.image-description 画像は故郷の鹿児島県にある佐多岬の写真です！
+.profile__page
+  %ul.profile__container
+    %li.my-image
+    %li.mypage__title
+      %h1.profile_title My profile
+      %h2.profile_name.skeleton　木原　康拓（きはら こうたく）
+      %h2.profile_address.skeleton　神奈川県横浜市在住
+      %h2.profile_birthplace.skeleton　出身地　鹿児島県
+      %h2.profile_former-job.skeleton　前職　警察官
+      %h2.profile_age.skeleton　28歳
+    %li.profile-btn さらに詳しく
+    %li.return-home 戻る
+    %li.southernmost　←日本本土最南端 ！
+  %h1.image-description 画像は故郷の鹿児島県にある佐多岬の写真です！
+  .job__box
+    %p.job__description
+    2010年３月　鹿児島県立鹿屋工業高等学校 電気科 卒業
+    %br/
+    2010年4月〜2019年10月: 神奈川県警察
+    %br/
+    主な仕事内容：　
+    %br/
+    交番勤務（２年）
+    %br/
+    警備部第一機動隊(２年半)
+    %br/
+    刑事第一課強行犯係（５年）
+  .toBe-engineer-btn なぜエンジニアに？
+  .add-image
+  .dream_description
+    私がプログラミングに興味を持ち始めたのは、高校時代に部活動でお世話になった先輩からエンジニアの存在を教えて頂いたことがきっかけでした。
+    %br/
+    %br/
+    幼い頃から絵を描くことや工作が好きだった私は、物作りに携わる仕事に就職したいという気持ちで工業高校に入学しましたが、入学して学んだことは、エアコンの設置やコンセントボックスの作成方法等の小手先のものばかりで、私にとって作っていて楽しいと感じる瞬間がなく、この先の仕事としてやっていくことに強い抵抗感を持っていました。
+    %br/
+    %br/
+    そんな中、電力システムや機械システム等それらの仕組み作りを根本から担うエンジニアの存在を先輩から教えて頂いたことで、パソコン1台で様々なものを1から創っていくことが出来るプログラミングに強く興味を持ちました。
+    %br/
+    %br/
+    しかし、当時の私は、エンジニアになるためには大学まで進学して専門知識を学ばないと就職することが出来ないと勝手に思い込んでいたために、母子家庭で進学出来るお金が無かったことを知っていた私はエンジニアの夢を一度諦め、母親を早く安心させたかったことと幼い頃から習っていた空手の経験が活かせそうな警察官という道を選びました。
+    %br/
+    警察官の仕事もやりがいはあったのですが、日々過酷な勤務に追われながら年月を重ねていく中で、一番成りたかったエンジニアの夢を諦めて一度きりの人生を終えて良いのかと自問自答する様になりました。
+    %br/
+    %br/
+    それからというもの、改めてエンジニアについて詳しく調べ始めてみると、技術のレベルやその種類は私が高校時代に思い描いていたエンジニア像よりも遥かに飛躍しており、自分が創りたいものを様々な技術と手法で具現化出来ること、そして自身が創ったサービスを皆に利用して貰えること等、とてもやりがいのある世界だということを知り、本格的にエンジニアへの転職を考える様になりました。
+    %br/
+    %br/
+    実家に帰省した際、母親が昔からの夢であった飲食店を開業して生活が安定してきたという報告を受け、夢を実現した母親にエンジニアになりたいことを打ち明けたところ、母親が
+    %br/
+    「実家を心配する必要はなくなったから、どうしてもやりたいなら覚悟を持ってやりなさい」
+    %br/
+    と背中を押してくれたことで、私は安定した公務員の仕事を辞めてでもエンジニアを目指すという決断をしました。
+    %br/
+    私の名前である康拓は、「何も無いところから何かを造って開拓していけるように」という由来で親から名付けて貰ったものです。この由来通りに活躍していきたいと思っています!
+
+
+
 
 :javascript
   $(function() {
@@ -43,4 +88,55 @@
     },2000);
 
     $('.southernmost').hide().fadeIn(1300);
+    $('.profile-btn').on('click', function(){
+      $(this).parents('.profile__container').remove();
+
+      $('.job__box').css({
+        'display': 'block',
+        'position': 'relative',
+        'left': '-600px',
+        'opacity': '0'
+      }).animate({
+        'left': '0px',
+        'opacity': '1'
+      },1500);
+
+      $('.toBe-engineer-btn').css({
+        'display': 'block',
+        'position': 'relative',
+        'right': '-600px',
+        'opacity': '0'
+      }).animate({
+        'bottom': '620px',
+        'right': '30px',
+        'opacity': '0.7'
+      },500);
+
+      $('.toBe-engineer-btn').on('click', function(){
+        $('.job__box').remove();
+        $('.dream_description').css({
+        'display': 'block',
+        'position': 'relative',
+        'top': '-900px',
+        'rigth': '-600px',
+        'opacity': '0'
+      }).animate({
+        'top': '-1300px',
+        'right': '0px',
+        'opacity': '1'
+      },1500);
+
+      $('.add-image').css({
+        'display': 'block',
+        'position': 'relative',
+        'top': '-630px',
+        'left': '-600px',
+        'opacity': '0'
+      }).animate({
+        'left': '0px',
+        'opacity': '1'
+      },2500);
+      });
+    });
+
   });
