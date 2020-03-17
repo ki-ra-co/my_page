@@ -136,6 +136,17 @@
         'left': '0px',
         'opacity': '1'
       },2500);
+      $('.image-description').text("左の人ではありません　右です");
+      $('.image-description').css({
+        'display': 'block',
+        'position': 'relative',
+        'top': '700px',
+        'left': '100px',
+        'opacity': '0'
+      }).animate({
+        'left': '0px',
+        'opacity': '1'
+      },2500);
       });
     });
     $(".return-home-btn").click(function() {
