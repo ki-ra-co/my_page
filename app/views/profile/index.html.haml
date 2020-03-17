@@ -25,7 +25,7 @@
     %br/
     警備部第一機動隊(２年半)
     %br/
-    刑事第一課強行犯係（５年）
+    刑事課強行犯係（５年）
   .toBe-engineer-btn なぜエンジニアに？
   .add-image
   .dream_description
@@ -122,7 +122,7 @@
         'rigth': '-600px',
         'opacity': '0'
       }).animate({
-        'top': '-1300px',
+        'top': '-1290px',
         'right': '0px',
         'opacity': '1'
       },1500);
@@ -139,5 +139,9 @@
       },2500);
       });
     });
-
+    $(".return-home-btn").click(function() {
+      if (confirm('ページ遷移しますか？')) {
+        window.location.href = '/';
+      }
+    });
   });
