@@ -9,7 +9,7 @@
       %h1.can-click Can you click?
     %ul.link-box__left
       %li.link-box__profile
-        = link_to("Profile","https://ja-jp.facebook.com/", {class: "profile-font"})
+        = link_to("Profile", profile_index_path, {class: "profile-font"})
       %li.link-box__skill
         = link_to("Skill","https://ja-jp.facebook.com/", {class: "skill-font"})
     %ul.link-box__right
@@ -18,6 +18,8 @@
       %li.link-box__qiita
         = link_to("Qiita","https://twitter.com/login?lang=ja", {class: "qiita-font"})
   %h1.description
+
+
 :javascript
   $(function() {
     $('.push-btn').on('click',function(){

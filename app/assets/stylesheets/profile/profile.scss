@@ -1,0 +1,72 @@
+.profile__container {
+  height: 100vh;
+  width: 100vw;
+  background-image: image-url('IMG_0459.jpeg');
+  background-size: cover;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  .my-image {
+    height: 28%;
+    width: 16%;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    background-image: image-url('IMG_1774.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-left: 150px;
+    margin-right: 70px;
+  }
+  .mypage__title {
+    padding-bottom: 30px;
+    width: 60%;
+    margin: 0 auto;
+    .profile_title{
+      font-size: 50px;
+      color: gray;
+      text-shadow: 3px 3px 1px rgb(39, 38, 38);
+      margin-bottom: 20px;
+    }
+  }
+  .profile-btn {
+    height: 80px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: green;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    line-height: 80px;
+    opacity: 0.5;
+    position: relative;
+    transition: 1s;
+    top: 600px;
+    right: 400px;
+  }
+  .profile-btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    color: blanchedalmond;
+    border: 3px solid rgb(37, 90, 90);
+  }
+  .southernmost {
+    height: 30px;
+    width: 400px;
+    color: palevioletred;
+    position: relative;
+    font-family: "Nico Moji";
+    top: 220px;
+    right: 500px;
+  }
+}
+.image-description {
+  height: 50px;
+  width: 100%;
+  color: #fff;
+  font-family: "Nico Moji";
+  position: relative;
+  bottom: 150px;
+  margin-left: 50px;
+  letter-spacing: 5px;
+}

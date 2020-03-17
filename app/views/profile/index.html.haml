@@ -1,0 +1,46 @@
+-# = render 'top_page/header'
+%ul.profile__container
+  %li.my-image
+  %li.mypage__title
+    %h1.profile_title My profile
+    %h2.profile_name.skeleton　木原　康拓（きはら こうたく）
+    %h2.profile_address.skeleton　神奈川県横浜市在住
+    %h2.profile_birthplace.skeleton　出身地　鹿児島県
+    %h2.profile_former-job.skeleton　前職　警察官
+    %h2.profile_age.skeleton　28歳
+  %li.profile-btn さらに詳しく
+  %li.southernmost　←日本本土最南端 ！
+%h1.image-description 画像は故郷の鹿児島県にある佐多岬の写真です！
+
+:javascript
+  $(function() {
+
+    $('.profile_title').css({
+      'position': 'relative',
+      'top': '-300px',
+      'opacity': '0'
+    }).animate({
+      'top': '0px',
+      'opacity': '1'
+    },1500);
+
+    $('.skeleton').css({
+      'position': 'relative',
+      'bottom': '-100px',
+      'opacity': '0'
+    }).animate({
+      'bottom': '0px',
+      'opacity': '1'
+    },5000);
+
+    $('.my-image').css({
+      'position': 'relative',
+      'left': '-300px',
+      'opacity': '0'
+    }).animate({
+      'left': '0px',
+      'opacity': '1'
+    },2000);
+
+    $('.southernmost').hide().fadeIn(1300);
+  });
