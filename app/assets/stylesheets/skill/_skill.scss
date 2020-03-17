@@ -1,0 +1,165 @@
+@mixin skill-box-size {
+  height: 300px;
+  width: 20%;
+  background-image: image-url('signup.jpg');
+  background-size: cover;
+  border-radius: 240px 15px 100px 15px / 15px 200px 15px 185px;
+  box-shadow: 8px 8px 8px black;
+  text-align: center;
+  line-height: 300px;
+  font-size: 50px;
+  list-style: none;
+  opacity: 0.7;
+  margin: 30px;
+  transition: 1s;
+}
+.skill__page {
+  background-image: image-url('signup.jpg');
+  .return-home-btn {
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: rgb(219, 138, 31);
+    color: rgb(163, 56, 56);
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    opacity: 0.9;
+    transition: 0.5s;
+    margin-left: 1150px;
+    position: relative;
+    bottom: 80px;
+  }
+  .return-home-btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    color: blanchedalmond;
+  }
+  .first-stage {
+    display: flex;
+    justify-content: space-around;
+    .skill-html {
+      color: orangered;
+      text-shadow: 2px 2px 2px black;
+      @include skill-box-size
+    }
+    .skill-html:hover {
+      border-radius: 15px 200px 15px 185px / 240px 15px 100px 15px;
+    }
+    .skill-css {
+      color: rgb(68, 132, 228);
+      text-shadow: 2px 2px 2px black;
+      font-weight: bold;
+      @include skill-box-size
+    }
+    .skill-css:hover {
+      border-radius: 15px 200px 15px 185px / 240px 15px 100px 15px;
+    }
+    .skill-ruby {
+      color: red;
+      @include skill-box-size
+    }
+    .skill-ruby:hover {
+      border-radius: 15px 200px 15px 185px / 240px 15px 100px 15px;
+    }
+  }
+
+  .second-stage {
+    display: flex;
+    justify-content: space-around;
+    .skill-rails {
+      color: #fff;
+      font-weight: bold;
+      text-shadow: 3px 3px 2px red;
+      @include skill-box-size;
+      font-size: 35px;
+    }
+    .skill-rails:hover {
+      border-radius: 15px 200px 15px 185px / 240px 15px 100px 15px;
+    }
+    .skill-javascript {
+      color: yellow;
+      text-shadow: 2px 2px 5px black;
+      @include skill-box-size
+    }
+    .skill-javascript:hover {
+      border-radius: 15px 200px 15px 185px / 240px 15px 100px 15px;
+    }
+    .skill-jquery {
+      color: black;
+      text-shadow: 3px 3px 2px rgb(87, 59, 212);
+      @include skill-box-size
+    }
+    .skill-jquery:hover {
+      border-radius: 15px 200px 15px 185px / 240px 15px 100px 15px;
+    }
+  }
+  .third-stage {
+    display: flex;
+    justify-content: space-around;
+    .skill-vue {
+      color: rgb(10, 143, 70);
+      text-shadow: 6px 4px 1px rgb(5, 37, 30);
+      font-weight: bold;
+      @include skill-box-size
+    }
+    .skill-vue:hover {
+      border-radius: 15px 200px 15px 185px / 240px 15px 100px 15px;
+    }
+    .skill-nuxt {
+      color: rgb(5, 24, 20);
+      text-shadow: 4px 4px 1px rgb(10, 143, 70);
+      font-weight: bold;
+      @include skill-box-size
+    }
+    .skill-nuxt:hover {
+      border-radius: 15px 200px 15px 185px / 240px 15px 100px 15px;
+    }
+    .skill-git {
+      color: brown;
+      text-shadow: 3px 3px 1px orangered;
+      font-weight: bold;
+      @include skill-box-size
+    }
+    .skill-git:hover {
+      border-radius: 15px 200px 15px 185px / 240px 15px 100px 15px;
+    }
+  }
+  .last-stage {
+    display: flex;
+    justify-content: space-around;
+    .skill-mysql {
+      color: rgb(73, 129, 136);
+      text-shadow: 3px 3px 1px orangered;
+      font-weight: bold;
+      @include skill-box-size
+    }
+    .skill-mysql:hover {
+      border-radius: 15px 200px 15px 185px / 240px 15px 100px 15px;
+    }
+    .skill-AWS {
+      color: yellow;
+      text-shadow: 3px 3px 1px black;
+      font-weight: bold;
+      @include skill-box-size
+    }
+    .skill-AWS:hover {
+      border-radius: 15px 200px 15px 185px / 240px 15px 100px 15px;
+    }
+    .skill-investigation {
+      @include skill-box-size
+    }
+    .skill-investigation:hover {
+      border-radius: 15px 200px 15px 185px / 240px 15px 100px 15px;
+    }
+  }
+}
+
+
+
+
+
+
+
+

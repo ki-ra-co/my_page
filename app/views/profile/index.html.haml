@@ -1,4 +1,3 @@
--# = render 'top_page/header'
 .profile__page
   %ul.profile__container
     %li.my-image
@@ -107,7 +106,7 @@
         'right': '-600px',
         'opacity': '0'
       }).animate({
-        'bottom': '680px',
+        'bottom': '675px',
         'right': '30px',
         'opacity': '0.7'
       },500);
@@ -140,7 +139,7 @@
       });
     });
     $(".return-home-btn").click(function() {
-      if (confirm('ページ遷移しますか？')) {
+      if (confirm('トップページへ戻りますか？')) {
         window.location.href = '/';
       }
     });

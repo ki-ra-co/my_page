@@ -1,0 +1,177 @@
+= render 'top_page/header'
+.skill__page
+  .return-home-btn 戻る
+  %ul.first-stage
+    %li.skill-html HTML
+    %li.skill-css CSS
+    %li.skill-ruby Ruby
+  %ul.second-stage
+    %li.skill-rails Ruby on Rails
+    %li.skill-javascript Javascript
+    %li.skill-jquery Jquary
+  %ul.third-stage
+    %li.skill-vue Vue.js
+    %li.skill-nuxt Nuxt.js
+    %li.skill-git Git
+  %ul.last-stage
+    %li.skill-mysql MySQL
+    %li.skill-AWS AWS
+    %li.skill-investigation 犯罪捜査
+
+:javascript
+  $(function() {
+    $(".return-home-btn").click(function() {
+      if (confirm('トップページへ戻りますか？')) {
+        window.location.href = '/';
+      }
+    });
+
+
+
+
+
+    $('.skill-html').hover(function(){
+      $(this).text('Haml使えます');
+      $(this).css({
+        'font-size': '30px'
+      });
+    },function(){
+      $(this).text('HTML');
+      $(this).css({
+        'font-size': '50px'
+      });
+    });
+
+    $('.skill-css').hover(function(){
+      $(this).text('Sass使えます');
+      $(this).css({
+        'font-size': '30px'
+      });
+    },function(){
+      $(this).text('CSS');
+      $(this).css({
+        'font-size': '50px'
+      });
+    });
+
+    $('.skill-ruby').hover(function(){
+      $(this).text('アイコンかわいい');
+      $(this).css({
+        'font-size': '30px'
+      });
+    },function(){
+      $(this).text('Ruby');
+      $(this).css({
+        'font-size': '30px'
+      });
+    });
+
+    $('.skill-rails').hover(function(){
+      $(this).text('使い易い！');
+      $(this).css({
+        'font-size': '30px'
+      });
+    },function(){
+      $(this).text('Ruby on Rails');
+      $(this).css({
+        'font-size': '30px'
+      });
+    });
+
+    $('.skill-javascript').hover(function(){
+      $(this).text('奥深い！');
+      $(this).css({
+        'font-size': '30px'
+      });
+    },function(){
+      $(this).text('Javascript');
+      $(this).css({
+        'font-size': '50px'
+      });
+    });
+
+    $('.skill-jquery').hover(function(){
+      $(this).text('覚えて良かった！');
+      $(this).css({
+        'font-size': '30px'
+      });
+    },function(){
+      $(this).text('Jquary');
+      $(this).css({
+        'font-size': '50px'
+      });
+    });
+
+  $('.skill-vue').hover(function(){
+      $(this).text('コンポーネントまじ便利');
+      $(this).css({
+        'font-size': '25px',
+        'text-shadow': '1px 1px 1px black'
+      });
+    },function(){
+      $(this).text('Vue.js');
+      $(this).css({
+        'font-size': '50px'
+      });
+    });
+
+    $('.skill-nuxt').hover(function(){
+      $(this).text('Vuex猛勉強中！');
+      $(this).css({
+        'font-size': '30px',
+      });
+    },function(){
+      $(this).text('Nuxt.js');
+      $(this).css({
+        'font-size': '50px'
+      });
+    });
+
+    $('.skill-git').hover(function(){
+      $(this).text('チーム開発経験済み');
+      $(this).css({
+        'font-size': '30px',
+      });
+    },function(){
+      $(this).text('Git');
+      $(this).css({
+        'font-size': '50px'
+      });
+    });
+
+    $('.skill-mysql').hover(function(){
+      $(this).text('DB設計一番重要');
+      $(this).css({
+        'font-size': '30px',
+      });
+    },function(){
+      $(this).text('MySQL');
+      $(this).css({
+        'font-size': '50px'
+      });
+    });
+
+    $('.skill-AWS').hover(function(){
+      $(this).text('EC2・S3使えます');
+      $(this).css({
+        'font-size': '30px',
+      });
+    },function(){
+      $(this).text('AWS');
+      $(this).css({
+        'font-size': '50px'
+      });
+    });
+    
+    $('.skill-investigation').hover(function(){
+      $(this).text('興味ありますか？');
+      $(this).css({
+        'font-size': '30px',
+      });
+    },function(){
+      $(this).text('犯罪捜査');
+      $(this).css({
+        'font-size': '50px'
+      });
+    });
+  });
