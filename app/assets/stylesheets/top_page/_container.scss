@@ -23,14 +23,14 @@
   .push-btn:hover {
     height: 120px;
     width: 330px;
-    background-image: image-url('bulebtn.jpeg');
-    color: rgb(209, 77, 77);
-    border: 1px solid khaki;
-    text-shadow: 3px 3px 1px indigo;
+    background-color: rgb(84, 147, 150);
+    color: rgb(73, 189, 82);
+    border: 5px solid rgb(68, 67, 57);
+    text-shadow: 5px 5px 1px rgb(39, 43, 49);
     font-size: 80px;
     letter-spacing: 5px;
-    line-height: 110px;
-    opacity: 0.9;
+    line-height: 100px;
+    opacity: 1;
   }
 }
 @media (max-width:1000px ) {
