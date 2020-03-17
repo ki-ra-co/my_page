@@ -58,6 +58,7 @@
     }
     .skill-ruby {
       color: red;
+      font-weight: bold;
       @include skill-box-size
     }
     .skill-ruby:hover {
