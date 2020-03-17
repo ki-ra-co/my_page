@@ -66,3 +66,7 @@ gem "haml-rails", ">= 1.0", '<= 2.0.1'
 gem "jquery-rails"
 
 gem 'font-awesome-sass'
+
+group :production do
+  gem 'unicorn', '5.4.1'
+end
