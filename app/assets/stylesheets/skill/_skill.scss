@@ -1,6 +1,6 @@
 @mixin skill-box-size {
   height: 300px;
-  width: 20%;
+  width: 27%;
   background-image: image-url('signup.jpg');
   background-size: cover;
   border-radius: 240px 15px 100px 15px / 15px 200px 15px 185px;
@@ -129,6 +129,7 @@
   .last-stage {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 150px;
     .skill-mysql {
       color: rgb(73, 129, 136);
       text-shadow: 3px 3px 1px orangered;
