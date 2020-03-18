@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   resources :top_page, onry: [:index]
   resources :profile, onry: [:index]
   resources :skill, onry: [:index]
+  resources :portfolio, onry: [:index]
 end

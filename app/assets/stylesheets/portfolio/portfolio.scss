@@ -1,0 +1,60 @@
+@mixin header-title-font {
+  font-size: 70px;
+  text-align: center;
+  letter-spacing: 50px;
+  line-height: 120px;
+  font-family: 'Alfa Slab One', cursive;
+}
+.portfolio__pages {
+
+  .first__page {
+    height: 100vh;
+    width: 100vw;
+    background-color: orange;
+    .first__page__header {
+      height: 15%;
+      width: 100%;
+      background-color: rgb(226, 100, 15);
+      color: yellow;
+      text-shadow: 10px 10px 20px black;
+      @include header-title-font
+    }
+  }
+  .second__page {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(186, 210, 211);
+    .second__page__header {
+      height: 15%;
+      width: 100%;
+      background-color: rgb(89, 233, 221);
+      color: blanchedalmond;
+      text-shadow: 10px 10px 20px black;
+      @include header-title-font
+    }
+  }
+  .third__page {
+    height: 100vh;
+    width: 100vw;
+    background-color: brown;
+    .third__page__header {
+      height: 15%;
+      width: 100%;
+      background-color: #fff;
+      @include header-title-font
+    }
+  }
+  .fourth__page {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(241, 192, 241);
+    color: rgb(115, 204, 167);
+    .fourth__page__header {
+      height: 15%;
+      width: 100%;
+      background-color: rgb(189, 12, 159);
+      text-shadow: 5px 5px 5px black;
+      @include header-title-font
+    }
+  }
+}
