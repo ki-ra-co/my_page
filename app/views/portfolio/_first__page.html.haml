@@ -1,2 +1,47 @@
 .first__page
   .first__page__header yarender
+  %ul.app-box-right
+    %li.app-discription
+      アプリの説明:
+      %br/
+      %br/
+      ToDoアプリです。
+      %br/
+      Trelloみたいなレイアウトを目指して
+      %br/
+      見易いポップな仕上がりにしてみました。
+    %li.app-skil
+      使用したスキル:
+      %br/
+      ruby,html,css,RubyonRails,git
+      %br/
+      EC2,Nginx,Capistrano
+    %li.app-other
+      備考:
+      %br/
+      cssのスキルを高めるために、
+      %br/
+      あえてjavascriptは使用せずに仕上げてみました。
+      %br/
+      今後は、wabpackによってVue.jsを導入して
+      %br/
+      ドラッグ＆ドロップ機能を付けることと、
+      %br/
+      カレンダーの日付から,その日毎のToDo画面に
+      %br/
+      遷移できる上、リスト名がカレンダーに表示されるように
+      %br/
+      仕上げていく予定です。
+  %ul.app-box-left
+    %li.image-box
+    %li.app-btn アプリ起動
+
+
+
+:javascript
+  $(function() {
+
+    $(".app-btn").click(function() {
+      window.location.href = 'http://18.176.26.126';
+    });
+  });
