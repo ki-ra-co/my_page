@@ -153,11 +153,12 @@
       .image-box {
         height: 100%;
         width: 100%;
-        background-image: image-url("yarender.jpeg");
+        background-image: image-url("board.jpeg");
         background-size: cover;
       }
       .app-btn {
         @include app-btn;
+        background-color: palevioletred;
         color: #fff;
       }
       .app-btn:hover {
