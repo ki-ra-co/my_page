@@ -18,18 +18,16 @@
     border-radius: 240px 15px 100px 15px / 15px 200px 15px 185px;
     opacity: 0.7;
     margin: 0 auto;
-    transition: 1s;
+    transition: 0.5s;
   }
   .push-btn:hover {
-    height: 120px;
-    width: 330px;
+    height: 105px;
+    width: 255px;
     background-color: #fff;
     color: rgb(216, 106, 106);
     border: 5px solid rgb(68, 67, 57);
-    text-shadow: 5px 5px 1px rgb(39, 43, 49);
-    font-size: 80px;
     letter-spacing: 5px;
-    line-height: 100px;
+    line-height: 90px;
     opacity: 1;
   }
 }
