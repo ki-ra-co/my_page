@@ -20,13 +20,7 @@
   line-height: 70px;
   margin: 0 auto;
   margin-top: 30px;
-  background-color: red;
 }
-
-
-
-
-
 
 .portfolio__pages {
   .first__page {
@@ -58,9 +52,100 @@
         padding-top: 30px;
       }
     }
+    .app-box-left {
+      @include app-boxes;
+      .image-box {
+        height: 100%;
+        width: 100%;
+        background-image: image-url("yarender.jpeg");
+        background-size: cover;
+      }
+      .app-btn {
+        @include app-btn;
+        background-color: red;
+        color: #fff;
+      }
+      .app-btn:hover {
+        font-weight: bold;
+        background-color: rgb(172, 84, 84);
+      }
+    }
+  }
 
+  .second__page {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(186, 210, 211);
+    .second__page__header {
+      @include header-title-font;
+      height: 15%;
+      width: 100%;
+      background-color: rgb(89, 233, 221);
+      color: blanchedalmond;
+      text-shadow: 10px 10px 20px black;
+    }
+    .app-box-right {
+      height: 50%;
+      width: 30%;
+      float: left;
+      margin-top: 50px;
+      margin-left: 150px;
+      .app-discription {
+        padding-top: 30px;
+      }
+      .app-skil {
+        padding-top: 30px;
+      }
+      .app-other {
+        padding-top: 30px;
+      }
+    }
+    .app-box-left {
+      @include app-boxes;
+      .image-box {
+        height: 100%;
+        width: 100%;
+        background-image: image-url("pictweet.jpeg");
+        background-size: contain;
+      }
+      .app-btn {
+        @include app-btn;
+        background-color: royalblue;
+        color: #fff;
+      }
+      .app-btn:hover {
+        font-weight: bold;
+        background-color: rgb(111, 138, 221);
+      }
+    }
+  }
 
-
+  .third__page {
+    height: 100vh;
+    width: 100vw;
+    background-color: brown;
+    .third__page__header {
+      @include header-title-font;
+      height: 15%;
+      width: 100%;
+      background-color: #fff;
+    }
+    .app-box-right {
+      height: 50%;
+      width: 30%;
+      float: left;
+      margin-top: 50px;
+      margin-left: 150px;
+      .app-discription {
+        padding-top: 30px;
+      }
+      .app-skil {
+        padding-top: 30px;
+      }
+      .app-other {
+        padding-top: 30px;
+      }
+    }
     .app-box-left {
       @include app-boxes;
       .image-box {
@@ -79,41 +164,53 @@
       }
     }
   }
-  .second__page {
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(186, 210, 211);
-    .second__page__header {
-      @include header-title-font;
-      height: 15%;
-      width: 100%;
-      background-color: rgb(89, 233, 221);
-      color: blanchedalmond;
-      text-shadow: 10px 10px 20px black;
-    }
-  }
-  .third__page {
-    height: 100vh;
-    width: 100vw;
-    background-color: brown;
-    .third__page__header {
-      @include header-title-font;
-      height: 15%;
-      width: 100%;
-      background-color: #fff;
-    }
-  }
+
   .fourth__page {
     height: 100vh;
     width: 100vw;
     background-color: rgb(241, 192, 241);
-    color: rgb(115, 204, 167);
+    
     .fourth__page__header {
       @include header-title-font;
       height: 15%;
       width: 100%;
       background-color: rgb(189, 12, 159);
+      color: rgb(144, 228, 193);
       text-shadow: 5px 5px 5px black;
+    }
+    .app-box-right {
+      height: 50%;
+      width: 30%;
+      float: left;
+      margin-top: 50px;
+      margin-left: 150px;
+      .app-discription {
+        padding-top: 30px;
+      }
+      .app-skil {
+        padding-top: 30px;
+      }
+      .app-other {
+        padding-top: 30px;
+      }
+    }
+    .app-box-left {
+      @include app-boxes;
+      .image-box {
+        height: 100%;
+        width: 100%;
+        background-image: image-url("hurima.jpeg");
+        background-size: cover;
+      }
+      .app-btn {
+        @include app-btn;
+        background-color: green;
+        color: #fff;
+      }
+      .app-btn:hover {
+        font-weight: bold;
+        background-color: rgb(83, 136, 83);
+      }
     }
   }
 }
