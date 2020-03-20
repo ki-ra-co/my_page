@@ -61,14 +61,14 @@
         background-image: image-url("yarender.jpeg");
         background-size: cover;
       }
-      .app-btn {
+      .yarender-btn {
         @include app-btn;
         background-color: red;
         color: #fff;
-      }
-      .app-btn:hover {
-        font-weight: bold;
-        background-color: rgb(172, 84, 84);
+        &:hover {
+          font-weight: bold;
+          background-color: rgb(172, 84, 84);
+        }
       }
     }
   }
@@ -109,14 +109,14 @@
         background-image: image-url("pictweet.jpeg");
         background-size: contain;
       }
-      .app-btn {
+      .pictweet-btn {
         @include app-btn;
         background-color: royalblue;
         color: #fff;
-      }
-      .app-btn:hover {
-        font-weight: bold;
-        background-color: rgb(111, 138, 221);
+        &:hover {
+          font-weight: bold;
+          background-color: rgb(111, 138, 221);
+        }
       }
     }
   }
@@ -156,14 +156,14 @@
         background-image: image-url("board.jpeg");
         background-size: cover;
       }
-      .app-btn {
+      .board-btn {
         @include app-btn;
         background-color: palevioletred;
         color: #fff;
-      }
-      .app-btn:hover {
-        font-weight: bold;
-        background-color: rgb(172, 84, 84);
+        &:hover {
+          font-weight: bold;
+          background-color: rgb(172, 84, 84);
+        }
       }
     }
   }
@@ -205,14 +205,14 @@
         background-image: image-url("hurima.jpeg");
         background-size: cover;
       }
-      .app-btn {
+      .furima-btn {
         @include app-btn;
         background-color: green;
         color: #fff;
-      }
-      .app-btn:hover {
-        font-weight: bold;
-        background-color: rgb(83, 136, 83);
+        &:hover {
+          font-weight: bold;
+          background-color: rgb(83, 136, 83);
+        }
       }
     }
   }
