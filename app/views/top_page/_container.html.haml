@@ -15,8 +15,8 @@
     %ul.link-box__right
       %li.link-box__portfolio
         = link_to("Portfolio",portfolio_index_path, {class: "portfolio-font"})
-      %li.link-box__qiita
-        = link_to("Qiita","https://twitter.com/login?lang=ja", {class: "qiita-font"})
+      %li.link-box__github
+        = link_to("GitHub","https://github.com/ki-ra-co?tab=repositories", {class: "github-font"})
   %h1.description
 
 
@@ -63,10 +63,10 @@
     }, function() {
         $(this).parents('.before__home-wrapper__container').find('.description').css('display', 'none');
     });
-    $('.link-box__qiita').hover(function(){
+    $('.link-box__github').hover(function(){
       $(this).parents('.before__home-wrapper__container').find('.description').css({
         'display':'block',
-      }).text("私が書いたキータです");
+      }).text("お粗末ですが私のGitHubです");
     }, function() {
         $(this).parents('.before__home-wrapper__container').find('.description').css('display', 'none');
     });
