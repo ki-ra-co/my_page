@@ -50,11 +50,11 @@
       top: 680px;
       right: 80px;
       z-index: 1;
-    }
-    .profile-btn:hover {
-      cursor: pointer;
-      opacity: 0.8;
-      color: blanchedalmond;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+        color: blanchedalmond;
+      }
     }
     .southernmost {
       height: 30px;
@@ -89,11 +89,11 @@
     transition: 0.5s;
     margin-top: 650px;
     margin-left: 1150px;
-  }
-  .return-home-btn:hover {
-    cursor: pointer;
-    opacity: 0.8;
-    color: blanchedalmond;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+      color: blanchedalmond;
+    }
   }
   .job__box {
     height: 40%;
@@ -120,13 +120,13 @@
     margin-top: 0px;
     margin-left: 750px;
     display: none;
-  }
-  .toBe-engineer-btn:hover {
-    opacity: 1;
-    background-color: rgb(22, 76, 83);
-    color: #fff;
-    border: 3px solid grey;
-    font-size: large;
+    &:hover {
+      opacity: 1;
+      background-color: rgb(22, 76, 83);
+      color: #fff;
+      border: 3px solid grey;
+      font-size: large;
+    }
   }
   .add-image {
     height: 500px;
