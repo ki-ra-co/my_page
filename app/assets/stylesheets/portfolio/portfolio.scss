@@ -35,7 +35,28 @@
       color: yellow;
       text-shadow: 10px 10px 20px black;
       border-bottom: 1px solid #fff;
-      
+    }
+    .return-home-btn {
+      height: 50px;
+      width: 150px;
+      border-radius: 10px;
+      background-color: rgb(219, 138, 31);
+      color: rgb(163, 56, 56);
+      font-weight: bold;
+      font-size: 30px;
+      text-align: center;
+      line-height: 50px;
+      opacity: 0.9;
+      transition: 0.5s;
+      margin-left: 1150px;
+      position: relative;
+      bottom: 80px;
+      left: 100px;
+    }
+    .return-home-btn:hover {
+      cursor: pointer;
+      opacity: 0.8;
+      color: blanchedalmond;
     }
     .app-box-right {
       height: 50%;
@@ -43,6 +64,7 @@
       float: left;
       margin-top: 50px;
       margin-left: 150px;
+      overflow: scroll;
       .app-discription {
         padding-top: 30px;
       }
@@ -91,6 +113,7 @@
       float: left;
       margin-top: 50px;
       margin-left: 150px;
+      overflow: scroll;
       .app-discription {
         padding-top: 30px;
       }
@@ -138,6 +161,7 @@
       float: left;
       margin-top: 50px;
       margin-left: 150px;
+      overflow: scroll;
       .app-discription {
         padding-top: 30px;
       }
@@ -187,6 +211,7 @@
       float: left;
       margin-top: 50px;
       margin-left: 150px;
+      overflow: scroll;
       .app-discription {
         padding-top: 30px;
       }
