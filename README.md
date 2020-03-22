@@ -1,24 +1,47 @@
 # README
 ![toppage](app/assets/images/README.png)
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+* アプリ名「My Page」  
 
-* Ruby version
+## 🌐 App URL  
 
-* System dependencies
+### **http://52.198.177.97/**  
 
-* Configuration
+* 概要  
+# 自己紹介用のポートフォリオサイトです。  
+# トップページの４項目から、自己紹介ページ、スキルページ、ポートフォリオページ、GitHubページに遷移できます。  
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
+* 本番環境（AWS）  
+# テストアカウントはありません。  
+# ポートフォリオページに掲載している個人アプリには、説明欄にテストアカウントを用意しています。  
+# 各アプリの起動ボタンを用意していますので、興味があればお試しください。  
 
-* Services (job queues, cache servers, search engines, etc.)
+* 制作背景  
+# サイトを訪れた方に、自分がどんな人物か興味を持っていただけることを目的として作成しました。  
 
-* Deployment instructions
+* 工夫したポイント  
+#　トップページを宇宙空間にしてみました。  
+##　無重力を出すために、ページを開いた直後に各項目が浮いているように表現してみました。  
+## 是非、ページ内を漂流する宇宙人をクリックしてみてください。  
 
+* 使用技術(開発環境)~各個人アプリで使用したもの〜
+# 言語  
+# フロント  
+# HTML,CSS,Javascript  
+# バックエンド  
+# Ruby2.5.1,RubyonRails 5.2.4.1,Rspec  
+# DB  
+# MySQL  
+# インフラ  
+# git  
+# AWS(EC2,S3)  
+# Nginx,Capistrano等  
+
+
+* 課題・今後実装したい機能
+# 各ページにおけるレスポンシブ対応  
+# QiitaやSNSアカウントへのリンクを設ける  
+# 宇宙人の撃破数やタイムを表示できる様にしたい  
 * ...
