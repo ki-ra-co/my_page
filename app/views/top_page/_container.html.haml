@@ -73,6 +73,16 @@
     $('.fab.fa-gitkraken').on('click',function(){
       $('.can-click').text("GYAAAA!!!").css('color','red');
       setTimeout(function(){
+        $('.description').css({
+          'display':'block',
+        }).text("撃破！");
+      },2000);
+      setTimeout(function(){
+        $('.description').css({
+          'display':'none',
+        }).text("撃破！");
+      },4000);
+      setTimeout(function(){
         $('.fab.fa-gitkraken').css('display','none');
       },2000);
       setTimeout(function(){
