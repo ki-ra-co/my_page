@@ -32,7 +32,7 @@
 ### DB  
 **MySQL**  
 ### インフラ構築  
-**AWS(EC2,S3,RDS,Route53,IAM,MFA,Cloud9),Nginx,Heroku**  
+**AWS(EC2,S3,RDS,Route53,IAM,MFA,ELB,Cloud9),Nginx,Heroku**  
 ### CD  
 **Capistrano**
 ### その他  
