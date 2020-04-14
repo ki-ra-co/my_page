@@ -27,17 +27,17 @@
 **HTML,HAML,CSS(Bootstrap),Sass,Javascript(jQuery)**  
 ### バックエンド  
 **PHP,Ruby,Node.js**
-## フレームワーク  
+### フレームワーク  
 **Laravel,RubyonRails(テストフレームワークRspec)**  
 ### DB  
 **MySQL**  
-## インフラ構築  
+### インフラ構築  
 **AWS(EC2,S3,RDS,Route53,IAM,MFA,Cloud9),Nginx,Heroku**  
-## CD  
+### CD  
 **Capistrano**
-## その他  
+### その他  
 **GitHub(GitKraken等),Trello,Slackを用いたチーム開発**  
-## 課題
+### 課題
 **(1)各アプリのレスポンシブ対応**  
 **(2)Docker/docker-conpose,k8sによるコンテナ構築**  
 **(3)CircleCIによるCI/CD構築**
