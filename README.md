@@ -5,7 +5,7 @@
 
 ## 🌐 App URL  
 
-**http://ki-ra-co.com./**  
+**https://ki-ra-co.com./**  
   
 ## 概要  
 **自己紹介用のポートフォリオサイトです。**  
