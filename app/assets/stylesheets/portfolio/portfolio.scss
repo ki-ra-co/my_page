@@ -148,17 +148,19 @@
   .third__page {
     height: 100vh;
     width: 100vw;
-    background-color: brown;
+    background-color: rgb(253, 230, 186);
     .third__page__header {
       @include header-title-font;
       height: 15%;
       width: 100%;
-      background-color: #fff;
+      background-color: rgb(226, 100, 15);
+      color: yellow;
+      text-shadow: 10px 10px 20px black;
+      border-bottom: 1px solid #fff;
     }
     .app-box-right {
       height: 50%;
       width: 30%;
-      color: #fff;
       float: left;
       margin-top: 100px;
       margin-left: 150px;
@@ -184,7 +186,7 @@
       }
       .board-btn {
         @include app-btn;
-        background-color: palevioletred;
+        background-color: red;
         color: #fff;
         &:hover {
           font-weight: bold;
